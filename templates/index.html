@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+     <div class= "container-fluid">
+         <div class='row'>
+            <ul id=cupcake-list></ul>
+         </div>
+        <div class='row'>
+<form id="new-cupcake"action="/api/cupcakes" method="POST" >
+            <label for="flavor">
+            Flavor:  <input id='flavor'name='flavor'type="text">  
+            </label>
+            <label for="size">
+            Size:    <input id='size'name="size"type="text">
+            </label>
+            <label for="rating">
+            Rating:    <input id='rating'name='rating'type="text">
+            </label>
+            <label for="image">
+            Image:    <input id='image' name="image" type="text">
+            </label>
+            
+            <button id="sub-btn" type="button" class='btn btn-light'>Add New Cupcake</button>
+        </form>
+        </div>
+        
+     </div>
+    
+        
+
+
+   <script src="/static/cupcakelist.js"></script>
+   
+</body>
+</html>
